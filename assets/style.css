@@ -85,8 +85,8 @@ dcc.RadioItems {
 }
 
 .logo {
-    max-width: 250px; /* maksymalna szerokość logo */
-    max-height: 120px; /* maksymalna wysokość logo */
+    max-width: 250px; 
+    max-height: 120px; 
 }
 
 .Select-control {
