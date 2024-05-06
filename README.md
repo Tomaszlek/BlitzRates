@@ -43,7 +43,10 @@ It enables generating charts for various technical indicators, such as Moving Av
     ```
     pip install -r requirements.txt
     ```
-
+4. **Run the application(using PyCharm 'Run' Button or in Python interpreter console)**:
+   '''
+   python main.py
+   '''
 ## Authors
 
 - [Tomasz Jarmoc/Tomaszlek](https://github.com/Tomaszlek)
