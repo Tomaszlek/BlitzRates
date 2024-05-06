@@ -26,6 +26,7 @@ conn.close()
 
 # Dash initialization
 app = dash.Dash(__name__, title='BlitzRates')
+server = app.server
 
 options = [{'label': f'{currency_name} ({currency_code})', 'value': currency_code}
            for (currency_name, currency_code) in currency_codes]
