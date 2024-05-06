@@ -31,12 +31,12 @@ It enables generating charts for various technical indicators, such as Moving Av
 
 1. **Clone the Repository**:
     ```
-    git clone https://github.com/your_username/financial-analysis.git
+    git clone https://github.com/Tomaszlek/BlitzRates.git
     ```
 
 2. **Navigate to the Project Directory**:
     ```
-    cd financial-analysis
+    cd BlitzRates
     ```
 
 3. **Install Dependencies**:
