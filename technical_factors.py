@@ -25,12 +25,12 @@ def moving_average(data, period_of_time):
 
 
 def relative_strength_index(data, period_of_time):
-    data['RSI'] = ta.rsi(data['Rate'], length=period_of_time, append=True)  # RSI (Indeks siły względnej)
+    data['RSI'] = ta.rsi(data['Rate'], length=period_of_time, append=True)
     return data
 
 
 def bollinger_bands(data, period_of_time, std_deviation):
     bands = ta.bbands(data['Rate'], length=period_of_time, std=std_deviation, append=True)
-    data['Bollinger Bands Lower'] = bands.iloc[:, 0]  # Kolumna dolnego pasma Bollingera
-    data['Bollinger Bands Upper'] = bands.iloc[:, 2]  # Kolumna górnego pasma Bollingera
+    data['Bollinger Bands Lower'] = bands.iloc[:, 0]
+    data['Bollinger Bands Upper'] = bands.iloc[:, 2]
     return data

@@ -26,13 +26,11 @@ conn.close()
 
 # Dash initialization
 app = dash.Dash(__name__, title='BlitzRates')
-server = app.server
 
 options = [{'label': f'{currency_name} ({currency_code})', 'value': currency_code}
            for (currency_name, currency_code) in currency_codes]
 
 
-# Kod layoutu HTML
 app.layout = html.Div([
     html.Link(
                    rel='stylesheet',
@@ -40,9 +38,9 @@ app.layout = html.Div([
                ),
     html.Img(src='assets/logo.png', className='logo'),
     html.H1('BlitzRates', id='title', style={'display': 'none'}),
-    # Pierwszy wiersz
+    
     html.Div([
-        # Pierwsza kolumna w pierwszym wierszu (1,1)
+
         html.Div([
             html.H2('Dostępne waluty ', className='subtitle'),
             dcc.Dropdown(
@@ -61,7 +59,7 @@ app.layout = html.Div([
                         {'label': '7-dniowa', 'value': 7},
                         {'label': '14-dniowa', 'value': 14}
                     ],
-                    value=0,  # Domyślnie 5-dniowa
+                    value=0,
                     labelStyle={'display': 'block'}
                 ),
                 html.Div([
@@ -70,7 +68,7 @@ app.layout = html.Div([
                            "różnymi okresami czasowymi."),
                 ], className='description', id='ma-currency-description', style={'display': 'none'})
             ], className='radio-container'),
-            # Kontener dla pozostałych wskaźników
+
             html.Div(id='technical-indicator-container-currency', children=[
                 html.Label('Pozostałe wskaźniki', className='label'),
                 dcc.RadioItems(
@@ -93,18 +91,18 @@ app.layout = html.Div([
                            "poruszać i potencjalne poziomy wsparcia i oporu."),
                 ], className='description', id='bollinger-currency-description', style={'display': 'none'})
             ])
-        ], className='column1'),  # Koniec pierwszej kolumny w pierwszym wierszu (1,1)
+        ], className='column1'),
 
-        # Druga kolumna w pierwszym wierszu (1,2)
+
         html.Div([
             dcc.Graph(id='currency-rate-chart')
-        ], className='column2')  # Koniec drugiej kolumny w pierwszym wierszu (1,2)
+        ], className='column2')
 
-    ], className='row'),  # Koniec pierwszego wiersza
+    ], className='row'),
 
-    # Drugi wiersz
+
     html.Div([
-        # Pierwsza kolumna w drugim wierszu (2,1)
+
         html.Div([
             html.H2('Cena złota ', className='subtitle'),
             html.Div([
@@ -126,7 +124,7 @@ app.layout = html.Div([
                            "wykorzystywana z różnymi przedziałami czasu"),
                 ], className='description', id='ma-gold-description', style={'display': 'none'})
             ], className='radio-container'),
-            # Kontener dla pozostałych wskaźników
+
             html.Div(id='technical-indicator-container-gold', children=[
                 html.Label('Pozostałe wskaźniki', className='label'),
                 dcc.RadioItems(
@@ -149,16 +147,15 @@ app.layout = html.Div([
                            "w którym ceny złota mogą się poruszać i potencjalne poziomy wsparcia i oporu."),
                 ], className='description', id='bollinger-gold-description', style={'display': 'none'})
             ])
-        ], className='column1'),  # Koniec pierwszej kolumny w drugim wierszu (2,1)
+        ], className='column1'),
 
-        # Druga kolumna w drugim wierszu (2,2)
         html.Div([
             dcc.Graph(id='gold-rate-chart')
-        ], className='column2')  # Koniec drugiej kolumny w drugim wierszu (2,2)
+        ], className='column2')
 
-    ], className='row')  # Koniec drugiego wiersza
+    ], className='row')
 
-], className='container')  # Koniec głównego kontenera
+], className='container')
 
 
 # Called when choosing another currency

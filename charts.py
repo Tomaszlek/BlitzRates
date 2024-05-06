@@ -8,7 +8,7 @@ def plot_currency_chart(currency_code, ma_period, indicator):
     if indicator == 'RSI':
         currency_df = tf.relative_strength_index(currency_df, ma_period)
     elif indicator == 'Bollinger Bands':
-        currency_df = tf.bollinger_bands(currency_df, 20, 2)  # Ustawiamy standardowe odchylenie na 2
+        currency_df = tf.bollinger_bands(currency_df, 20, 2)
 
     fig = go.Figure()
 
@@ -69,7 +69,7 @@ def plot_gold_chart(ma_period, indicator):
     if indicator == 'RSI':
         gold_df = tf.relative_strength_index(gold_df, ma_period)
     elif indicator == 'Bollinger Bands':
-        gold_df = tf.bollinger_bands(gold_df, 20, 2)  # Ustawiamy standardowe odchylenie na 2
+        gold_df = tf.bollinger_bands(gold_df, 20, 2)
 
     fig = go.Figure()
 
