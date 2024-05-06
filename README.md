@@ -1,7 +1,7 @@
 # BlitzRates
 
 ## Description 
-The application is designed for analyzing and interactively visualizing financial data, such as currency exchange rates and gold prices.
+The application is designed for analyzing and interactively visualizing financial data, such as currency exchange rates(30+ available) and gold prices.
 It enables generating charts for various technical indicators, such as Moving Average, RSI (Relative Strength Index) and Bollinger Bands.
 
 ## Key Features
@@ -43,10 +43,12 @@ It enables generating charts for various technical indicators, such as Moving Av
     ```
     pip install -r requirements.txt
     ```
+    
 4. **Run the application(using PyCharm 'Run' Button or in Python interpreter console)**:
-   '''
+   ```
    python main.py
-   '''
+   ```
+   
 ## Authors
 
 - [Tomasz Jarmoc/Tomaszlek](https://github.com/Tomaszlek)
