@@ -1,11 +1,13 @@
 # BlitzRates
 
 ## Description 
-The application is designed for analyzing and visualizing financial data, such as currency exchange rates and gold prices. It enables generating charts for various technical indicators, such as RSI (Relative Strength Index) and Bollinger Bands.
+The application is designed for analyzing and visualizing financial data, such as currency exchange rates and gold prices. It enables generating charts for various technical indicators, such as Moving Average, RSI (Relative Strength Index) and Bollinger Bands.
 
-## Features
+## Key Features
 
-### Chart Functions
+### Interactive Financial Charts
+### Technical indicators, shown also on charts with description
+### Up-to-date 30+ currency rates and gold rate using Polish National Bank API 
 
 ## Requirements
 
