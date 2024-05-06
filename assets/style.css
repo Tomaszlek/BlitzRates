@@ -31,14 +31,13 @@ dcc.RadioItems {
     margin-bottom: 20px;
 }
 
-/* Stylizacja przycisków RadioItems */
 .dcc-radio-item {
     display: block;
     background-color: #333333;
     margin-right: 20px;
 }
 
-/* Stylizacja przycisków RadioItems */
+
 .dcc-radio-item label {
     margin-right: 5px;
 }
@@ -48,19 +47,18 @@ dcc.RadioItems {
     margin-bottom: 20px;
 }
 
-/* Styl dla podtytułów */
+
 .subtitle {
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
-/* Styl dla etykiet */
+
 .label {
     font-size: 20px;
     margin-bottom: 5px;
 }
 
-/* Styl dla kontenerów wierszy */
 .row {
     display: flex;
     width: 100%;
@@ -74,21 +72,21 @@ dcc.RadioItems {
     margin-left: 3%;
     width: 63%;
 }
-/* Styl dla kontenera głównego */
+
 .container {
     display: flex;
     flex-direction: column;
     margin: 20px;
 }
 
-/* Styl dla kontenerów przycisków RadioItems */
+
 .radio-container {
     margin-bottom: 20px;
 }
 
 .logo {
-    max-width: 250px; /* maksymalna szerokość logo */
-    max-height: 120px; /* maksymalna wysokość logo */
+    max-width: 250px; 
+    max-height: 120px; 
 }
 
 .Select-control {
