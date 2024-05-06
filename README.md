@@ -22,7 +22,7 @@ It enables generating charts for various technical indicators, such as Moving Av
 - **Intuitive Controls**: Easily adjust parameters and toggle between different technical indicators for dynamic charting experiences.
 - **Interactive Plotting**: Interact with charts to zoom in/out, pan across timeframes, and hover over data points for detailed information.
 
-## Requirements
+## Used Languages/Libraries
 
 - Python 3.10
 - Python Libraries: Dash, Numpy, Plotly, Pandas
