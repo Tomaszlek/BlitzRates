@@ -1,0 +1,106 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
+    font-weight: 400;
+}
+
+html.Div {
+    margin: 20px;
+}
+
+html.H2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+html.H3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+dcc.Dropdown{
+    background-color: #FFFFFF;
+    margin-bottom : 20px;
+}
+
+dcc.RadioItems {
+    margin-bottom: 20px;
+}
+
+/* Stylizacja przycisków RadioItems */
+.dcc-radio-item {
+    display: block;
+    background-color: #333333;
+    margin-right: 20px;
+}
+
+/* Stylizacja przycisków RadioItems */
+.dcc-radio-item label {
+    margin-right: 5px;
+}
+
+#title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styl dla podtytułów */
+.subtitle {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Styl dla etykiet */
+.label {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* Styl dla kontenerów wierszy */
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.column1{
+    width: 33%;
+}
+
+.column2{
+    margin-left: 3%;
+    width: 63%;
+}
+/* Styl dla kontenera głównego */
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+/* Styl dla kontenerów przycisków RadioItems */
+.radio-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 250px; /* maksymalna szerokość logo */
+    max-height: 120px; /* maksymalna wysokość logo */
+}
+
+.Select-control {
+    background-color: rgb(25, 25, 25) !important;
+    color:white;
+  }
+
+.Select-menu-outer {
+    background-color: rgb(25, 25, 25);
+    color: white;
+}
+
+.Select-value-label {
+    color: white !important;
+}
